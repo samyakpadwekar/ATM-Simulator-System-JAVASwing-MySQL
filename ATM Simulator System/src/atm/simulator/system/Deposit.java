@@ -14,7 +14,8 @@ import java.util.*;
 
 public class Deposit extends JFrame implements ActionListener{
     
-    JTextField t1,t2;
+    JTextField t1;//t2;
+    JPasswordField pf1;//pin
     JButton b1,b2,b3;
     JLabel l1,l2,l3;
     
@@ -45,8 +46,8 @@ public class Deposit extends JFrame implements ActionListener{
         t1 = new JTextField();
         t1.setFont(new Font("Raleway", Font.BOLD, 22));
         
-        t2 = new JTextField();
-        t2.setFont(new Font("Raleway", Font.BOLD, 14));
+        pf1 =new JPasswordField(15);
+        pf1.setFont(new Font("Raleway", Font.BOLD, 14));
         
         b1 = new JButton("DEPOSIT");
         b1.setFont(new Font("System", Font.BOLD, 18));
@@ -69,8 +70,8 @@ public class Deposit extends JFrame implements ActionListener{
         l3.setBounds(620,10,80,30);
         add(l3);
         
-        t2.setBounds(700,10,40,30);
-        add(t2);
+        pf1.setBounds(700,10,50,30);
+        add(pf1);
         
         l1.setBounds(150,150,800,60);
         add(l1);
@@ -107,7 +108,7 @@ public class Deposit extends JFrame implements ActionListener{
         try{        
            
             String a = t1.getText();
-            String b = t2.getText();
+            String b = pf1.getText();
             
             
             
